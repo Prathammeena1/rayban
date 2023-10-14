@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "gilroyL";
+    src: url(fonts/Gilroy-FREE/Gilroy-Light.otf);
+}
+@font-face {
+    font-family: "gilroyB";
+    src: url(fonts/Gilroy-FREE/Gilroy-ExtraBold.otf);
+}
+@font-face {
+    font-family: "kajiro";
+    src: url(fonts/kajiro/Kajiro.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  font-family: "gilroyL";
+  color: white;
+}
+#back{
+    height: 100%;
+    width: 100%;
+}
+
+#back img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#front{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;   
+    pointer-events: none;
+}
+
+#workingArea{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#nav{
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    transition: all ease-in-out 1s;
+}
+#nav a:hover{
+    border-bottom: 1px solid white;
+}
+
+#navLeft,#navRight{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    
+}
+#navLeft img{
+    width: 100px;
+}
+#hero{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#heroL{
+    width: 50%;
+    font-family: "kajiro";
+}
+
+.elems{
+    overflow: hidden;
+    height: 8vw;
+    position: relative;
+}
+.elems>h1:nth-child(1){
+    top: 0;
+}
+.elems>h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 9vw;
+    line-height: .9;
+}
+
+
+#heroL>button{
+    margin-top: 2.5vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: black;
+    padding: .4vw 4vw;
+    font-family: "kajiro";
+    font-size: 2.5vw;
+    pointer-events: all;
+    transition: all ease-in-out .5s;
+    border: none;
+}
+#heroL>button:hover{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#heroR{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+#heroR>p{
+    text-align: right;
+    font-size: 11px;
+}
+#heroR>p:nth-child(3){
+    margin-bottom: 7vw;
+}
+
+#imgDiv{
+    height: 11vw;
+    width: 100%;
+    background-color: rgb(157, 157, 157);
+    margin: 2vw 0;
+}
+
+#imgDiv>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
